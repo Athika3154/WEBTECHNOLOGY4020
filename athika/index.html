@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Servlet</title>
+    <style>
+        /* Body Styling with Animated Gradient Background */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff6f61, #ffbc00, #00b3b3, #6a5acd);
+            background-size: 400% 400%;
+            animation: gradientBackground 10s ease infinite;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Keyframes for Animated Gradient Background */
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header Styling with Animation */
+        h1 {
+            font-size: 3em;
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.7);
+            animation: sparkle 3s infinite alternate;
+        }
+
+        /* Sparkle Effect Animation for Header */
+        @keyframes sparkle {
+            0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.7); }
+            100% { text-shadow: 0 0 30px rgba(255, 255, 255, 0.9), 0 0 60px rgba(255, 255, 255, 0.8); }
+        }
+
+        /* Form Styling with Animation */
+        .form-container {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1.5s ease-out;
+            display: inline-block;
+        }
+
+        /* Fade-In-Up Animation for Form */
+        @keyframes fadeInUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Input and Button Styling with Hover Effects */
+        input, button {
+            padding: 12px 20px;
+            font-size: 1.2em;
+            margin: 10px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            width: 60%;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        /* Input Styling */
+        input {
+            background-color: #ff6f61;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        input:focus {
+            background-color: #ffbc00;
+            transform: scale(1.05);
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #00b3b3;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+        }
+
+        button:hover {
+            background-color: #6a5acd;
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Display the result in a colorful container */
+        .result {
+            margin-top: 30px;
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.9);
+            animation: fadeInUp 2s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Hello Servlet!</h1>
+
+    <div class="form-container">
+        <form action="hello" method="GET">
+            <label for="name">Enter your name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <button type="submit">Say Hello</button>
+        </form>
+    </div>
+
+    <div class="result">
+        <!-- The result message will be shown here -->
+        <p id="greeting"></p>
+    </div>
+
+    <script>
+        // JavaScript to handle the result of the name entered
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const greeting = document.getElementById('greeting');
+
+        if (name) {
+            greeting.innerHTML = "Hello, " + name + "!";
+        } else {
+            greeting.innerHTML = "Hello, World!";
+        }
+    </script>
+</body>
+</html>

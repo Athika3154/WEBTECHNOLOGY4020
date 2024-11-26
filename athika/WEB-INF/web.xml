@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+        <welcome-file-list>
+        <welcome-file>quantity.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet Declaration -->
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>ProductServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/ProductServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>HelloServlet</servlet-class>  <!-- The fully qualified class name -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>  <!-- The URL pattern for this servlet -->
+    </servlet-mapping>
+
+    <!-- Welcome File Configuration -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>  <!-- Default page when visiting the app -->
+    </welcome-file-list>
+    
+      <servlet>
+        <servlet-name>HelpRequestServlet</servlet-name>
+        <servlet-class>HelpRequestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelpRequestServlet</servlet-name>
+        <url-pattern>/HelpRequestServlet</url-pattern>
+    </servlet-mapping>
+
+
+    
+    <servlet>
+        <servlet-name>VisitCounterServlet</servlet-name>
+        <servlet-class>VisitCounterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VisitCounterServlet</servlet-name>
+        <url-pattern>/visitCounter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>OrderServlet</servlet-class> <!-- No package name -->
+    </servlet>
+
+    <!-- Map the servlet to a URL pattern -->
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/OrderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CosmeticRecommendationServlet</servlet-name>
+        <servlet-class>CosmeticRecommendationServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>CosmeticRecommendationServlet</servlet-name>
+        <url-pattern>/cosmetics</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>recommend.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
