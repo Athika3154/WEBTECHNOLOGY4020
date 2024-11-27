@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product>
+        <id>1</id>
+        <name>Blush</name>
+        <description>Flawless blush for a natural flush.</description>
+        <price>950.00</price>
+        <stock>100</stock>
+        <image>blush.jpg</image>
+    </product>
+    <product>
+        <id>2</id>
+        <name>Brush Set</name>
+        <description>Luxury brush set for all makeup needs.</description>
+        <price>2500.00</price>
+        <stock>50</stock>
+        <image>brush.jpg</image>
+    </product>
+    <product>
+        <id>3</id>
+        <name>Concealer</name>
+        <description>Perfect for covering blemishes and dark circles.</description>
+        <price>1200.00</price>
+        <stock>120</stock>
+        <image>concealer.jpg</image>
+    </product>
+    <product>
+        <id>4</id>
+        <name>Eyeliner</name>
+        <description>Long-lasting and smudge-proof eyeliner.</description>
+        <price>800.00</price>
+        <stock>150</stock>
+        <image>eyeliner.jpg</image>
+    </product>
+    <product>
+        <id>5</id>
+        <name>Eyeshadow</name>
+        <description>Highly pigmented eyeshadow palette.</description>
+        <price>2200.00</price>
+        <stock>80</stock>
+        <image>eyeshadow.jpg</image>
+    </product>
+    <product>
+        <id>6</id>
+        <name>Foundation</name>
+        <description>Lightweight foundation for a flawless base.</description>
+        <price>1800.00</price>
+        <stock>100</stock>
+        <image>foundation.jpg</image>
+    </product>
+    <product>
+        <id>7</id>
+        <name>Gloss</name>
+        <description>Hydrating and glossy finish.</description>
+        <price>600.00</price>
+        <stock>200</stock>
+        <image>gloss.jpg</image>
+    </product>
+    <product>
+        <id>8</id>
+        <name>Kajal</name>
+        <description>Rich, smudge-proof kajal.</description>
+        <price>450.00</price>
+        <stock>180</stock>
+        <image>kajal.jpg</image>
+    </product>
+    <product>
+        <id>9</id>
+        <name>Lipstick</name>
+        <description>Velvety smooth lipstick in multiple shades.</description>
+        <price>900.00</price>
+        <stock>200</stock>
+        <image>lipstick.jpg</image>
+    </product>
+    <product>
+        <id>10</id>
+        <name>Makeup Remover</name>
+        <description>Gentle makeup remover for a clean finish.</description>
+        <price>500.00</price>
+        <stock>150</stock>
+        <image>makeup_remover.jpg</image>
+    </product>
+    <product>
+        <id>11</id>
+        <name>Masacara</name>
+        <description>Waterproof mascara for voluminous lashes.</description>
+        <price>1100.00</price>
+        <stock>150</stock>
+        <image>mascara.jpg</image>
+    </product>
+    <product>
+        <id>12</id>
+        <name>Primer</name>
+        <description>Preps your face for long-lasting makeup.</description>
+        <price>1400.00</price>
+        <stock>130</stock>
+        <image>primer.jpg</image>
+    </product>
+    <product>
+        <id>13</id>
+        <name>Setting Spray</name>
+        <description>Long-lasting setting spray for perfect makeup.</description>
+        <price>750.00</price>
+        <stock>100</stock>
+        <image>setting_spray.jpg</image>
+    </product>
+    <product>
+        <id>14</id>
+        <name>Makeup Sponge</name>
+        <description>Soft, high-quality makeup sponge for flawless application.</description>
+        <price>400.00</price>
+        <stock>200</stock>
+        <image>sponge.jpg</image>
+    </product>
+</products>

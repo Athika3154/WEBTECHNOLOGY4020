@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    background: linear-gradient(135deg, #f1c6e0, #f8d4e1); /* Soft pastel gradient */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main container styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 50px;
+    color: #ff4081; /* Bright pink for a girly vibe */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Product display container */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px 0;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Product Card Styles */
+.product {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #fff0f5;
+    position: relative;
+}
+
+/* Hover effect for product cards */
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Add shimmer effect on hover */
+.product:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff4081, #ff64b0, #ff4081);
+    background-size: 400% 400%;
+    animation: shimmer 1.5s ease-in-out infinite;
+    opacity: 0.2;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: -400% 0;
+    }
+}
+
+/* Product Image */
+.product img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+/* Product Text Styling */
+.product h2 {
+    font-size: 24px;
+    color: #ff64b0;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.product strong {
+    font-size: 18px;
+    color: #ff4081;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
